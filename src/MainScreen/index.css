@@ -1,0 +1,214 @@
+.home-page {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(128, 128, 128, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../components/pexels-anete-lusina-4792729.jpg);
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 5vw 90vw 5vw;
+  grid-template-rows: 5vh 90vh 5vh;
+
+  grid-template-areas:
+    "left up right"
+    "left center right"
+    "left down right";
+}
+.terminal {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../components/terminal.png);
+  background-size: cover;
+
+  position: absolute;
+  z-index: 5;
+  animation: fadeOut 1s 11.5s forwards;
+}
+/* center text with animation */
+.centerText {
+  grid-area: center;
+  display: inline;
+}
+.centerText > h1 {
+  top: 3.5rem;
+  left: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+}
+/* -----------------------animation-------------- */
+:root {
+  --bg-color: rgb(50, 10, 36, 255);
+  --typewriterSpeedOne: 1s;
+  --typewriterSpeed: 0s;
+  --typewriterSpeedDots: 2s;
+
+/*  */
+  --typewriterCharactersOne: 11;
+  --typewriterCharactersTwo: 22;
+  --typewriterCharactersThree: 19;
+  --typewriterCharactersFour: 14;
+  --typewriterCharactersDots: 6;
+
+}
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* ----one---- */
+.one::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeedOne)
+    steps(var(--typewriterCharactersOne)) 1s forwards;
+}
+.one::after {
+  width: 0.125em;
+  background: rgb(0, 0, 0);
+  animation: typewriter var(--typewriterSpeedOne)
+      steps(var(--typewriterCharactersOne)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharactersOne)) infinite,
+    fadeOut 50ms 3s forwards;
+}
+/* ----one---- */
+/* --------------------two---------------- */
+.two::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharactersTwo)) 3s forwards;
+}
+.two::after {
+  width: 0.125em;
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharactersTwo)) 3s forwards;
+
+  
+}
+/* --------------------two---------------- */
+/* --------------------three---------------- */
+.three::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharactersThree)) 3s forwards;
+}
+.three::after {
+  width: 0.125em;
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharactersThree)) 3s forwards,
+}
+/* --------------------three---------------- */
+
+/* --------------------four---------------- */
+.four::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharactersFour)) 5s forwards;
+}
+.four::after {
+  width: 0.125em;
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharactersFour)) 5s forwards,
+
+
+}
+/* --------------------four---------------- */
+/* --------------------five---------------- */
+.five::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharactersThree)) 11s forwards ;
+}
+
+/* --------------------five---------------- */
+
+
+/* --------------------dots---------------- */
+.dots::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeedDots)
+    steps(var(--typewriterCharactersDots)) 6s;
+    animation-iteration-count: 2.5;
+    
+}
+/* --------------------dots---------------- */
+
+
+
+/* green text  */
+/* ------------------1----------------- */
+.greenText-1 {
+  top: 3.5rem;
+  left: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: #40c057;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+}
+/* ------------------1----------------- */
+
+
+/* green text */
+
+
+/* ---------keyframes------- */
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: rgb(255, 255, 255);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* center text with animation */
+
+.up {
+  grid-area: up;
+  z-index: 0;
+}
+.up > div {
+  grid-area: center;
+}
+.left {
+  grid-area: left;
+  z-index: 0;
+}
+.right {
+  grid-area: right;
+}
+.down {
+  grid-area: down;
+}

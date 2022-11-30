@@ -1,0 +1,32 @@
+.right {
+  justify-self: center;
+  align-self: center;
+
+}
+.iconRight{
+  height: 2rem;
+  width: 2rem;
+
+
+}
+
+.iconRight:hover {
+  animation: arrowTransitionRight 0.6s ease-in-out forwards 1;
+}
+@keyframes arrowTransitionRight{
+  
+  50%{
+    transform: rotate(180deg);
+
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateX(-0.2rem) rotate(180deg);
+    border-radius: 60%;
+    color: aquamarine;
+    scale: 1.9;
+
+  }
+}
+

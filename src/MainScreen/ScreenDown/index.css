@@ -1,0 +1,18 @@
+.screenDown {
+  background: red;
+ 
+  height:90vh;
+  width:90vw;
+
+  top: 5.5vh;
+  left: 0vw;
+  position: absolute;
+  align-items: center;
+
+  grid-column: 2/3;
+  grid-row: 2/span 1 ;
+
+}
+
+.btn-close{
+}

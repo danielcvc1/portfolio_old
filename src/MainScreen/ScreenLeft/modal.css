@@ -1,0 +1,28 @@
+.left {
+  justify-self: center;
+  align-self: center;
+}
+
+.iconLeft {
+  height: 2rem;
+  width: 2rem;
+}
+
+.iconLeft:hover {
+  animation: arrowTransitionLeft 1s ease-in-out forwards 1 ;
+}
+@keyframes arrowTransitionLeft {
+
+  50%{
+    transform: rotate(180deg);
+
+  }
+ 
+  100% {
+    background-color: rgba(199, 196, 200, 0.212);
+    transform: translateX(1rem) rotate(180deg);
+    border-radius: 60%;
+    color: aquamarine;
+    scale: 1.9;
+  }
+}
