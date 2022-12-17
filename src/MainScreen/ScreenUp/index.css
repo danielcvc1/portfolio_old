@@ -1,5 +1,5 @@
 .screenUp {
-  background: green;
+  background: rgba(224, 250, 255, 0.555);
 
   height: 90vh;
   width: 90vw;
@@ -28,4 +28,26 @@
   grid-row: 5/6;
 
 
+}
+
+.title{
+grid-row: 1/1;
+grid-column: 4/6;
+margin-left: 50%;
+margin-top: -25%;
+
+}
+
+.img-1{
+   height: 50vh;
+  width: 25vw;
+  background-image:url(../../components/me.jpg);
+  background-size: cover;
+  grid-row: 4/4;
+grid-column: 7/9;
+}
+
+.txt-1{
+  grid-row: 4/4;
+grid-column: 7/9;
 }

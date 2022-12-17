@@ -7,7 +7,7 @@ import ModalLeft from "./ScreenLeft/modal";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <div className="terminal">
+      {/* <div className="terminal">
         <div className="centerText">
           <div className="greenText-1">
             user@user-System-Product-Name:~$
@@ -28,7 +28,7 @@ const HomePage = () => {
 
 
         </div>
-      </div>
+      </div> */}
 
       <div className="up">
         <ModalUp />
