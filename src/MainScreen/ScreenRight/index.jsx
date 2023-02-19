@@ -10,10 +10,10 @@ const ScreenRight = ({ handleClose }) => {
       transition={{ ease: "easeOut" }}
     >
       <MySkills />
-      <button className="btn-three" onClick={handleClose}>
-        Close
-      </button>
 
+      <button className="btn-three" onClick={handleClose}>
+        close 
+      </button>
     </motion.div>
   );
 };

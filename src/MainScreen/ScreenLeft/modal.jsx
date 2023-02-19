@@ -2,6 +2,7 @@ import { useState } from "react";
 import ScreenLeft from ".";
 import "./modal.css";
 import { SlArrowLeft } from "react-icons/sl";
+import BackgroundLeft from "./backgroundLeft";
 
 const ModalLeft = () => {
   const [screen, setScreen] = useState(false);
@@ -11,13 +12,18 @@ const ModalLeft = () => {
 
   return (
     <div className="left">
+      {screen && <BackgroundLeft />}
+
+      {screen && <ScreenLeft screen={screen} handleClose={close} />}
+
       <SlArrowLeft
         className="iconLeft"
         onClick={() => (screen ? close() : open())}
       />
-      {screen && <ScreenLeft screen={screen} handleClose={close} />}
     </div>
   );
 };
 
 export default ModalLeft;
+
+

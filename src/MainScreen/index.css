@@ -27,7 +27,6 @@
   background-size: cover;
 
   position: absolute;
-  z-index: 5;
   animation: fadeOut 1s 11.5s forwards;
 }
 /* center text with animation */
@@ -196,15 +195,14 @@ h1::after {
 /* center text with animation */
 
 .up {
-  grid-area: up;
-  z-index: 0;
+  grid-area: up ;
+  transform: translateX(0.8vw);
 }
 .up > div {
   grid-area: center;
 }
 .left {
   grid-area: left;
-  z-index: 0;
 }
 .right {
   grid-area: right;

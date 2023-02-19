@@ -1,0 +1,12 @@
+.backgroundLeft {
+  background: linear-gradient(
+    to right,
+    hsla(112, 22%, 32%, 0.534),
+    hsla(153, 38%, 25%, 0.568)
+  );
+  height: 110vh;
+  width: 110vw;
+  position: fixed;
+  transform: translate(-5%, -45%);
+  z-index: 2;
+}

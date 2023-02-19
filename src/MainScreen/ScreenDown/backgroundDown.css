@@ -1,0 +1,8 @@
+.backgroundDown {
+  background:   linear-gradient(to right, hsla(322, 40%, 75%, 0.500), hsla(55, 100%, 93%, 0.500));
+  height: 110vh;
+  width: 110vw;
+  position: fixed;
+  transform: translate(-50%,-94%);
+  z-index: 2;
+}

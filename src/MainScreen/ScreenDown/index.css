@@ -1,5 +1,6 @@
 .screenDown {
-  background: red;
+  background: hsla(321, 40%, 83%, 0.700);
+  z-index: 3;
  
   height:90vh;
   width:90vw;
@@ -12,7 +13,59 @@
   grid-column: 2/3;
   grid-row: 2/span 1 ;
 
+display: grid;   
+
+
+grid-template-columns: 5vw 80vw 5vw;
+grid-template-rows: repeat(5, 18vh);
 }
 
-.btn-close{
+.project{
+
+
+  
+  
+  grid-column: 2/2;
+  grid-row: 1/span 5 ;
+
+
+
+}
+.leftArwBtn{
+  width: 5vw;
+
+
+  grid-column: 1/1;
+  grid-row: 3/3 ;
+  z-index: 2;
+
+}
+
+.rightArwBtn{
+  width: 5vw;
+
+
+  grid-column: 3/3;
+  grid-row: 3/3 ;
+
+  z-index: 2;
+
+}
+.btn-close-down{
+
+  grid-column:2/2;
+  grid-row: 5/5 ;
+
+justify-self: center;  
+  width: 8rem;
+  height: 2rem;
+  display: inline;
+
+  z-index: 2;
+
+  color: rgb(255, 0, 0);
+  transition: all 0.5s;
+
+
+
 }

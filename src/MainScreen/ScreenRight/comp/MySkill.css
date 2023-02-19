@@ -1,19 +1,37 @@
 .MySkill {
-  grid-row: 1 / span 3;
+  display: grid;
+  grid-row: 2 / span 3;
   grid-column: 2 / span 2;
-  padding: 1rem;
-  margin-top: 15rem;
-  display: flex;
-  gap: 40vw;
+
+  grid-template-columns: repeat(11, 8.63vw);
+  grid-template-rows: repeat(12, 7.5vh);
+
+  font-family: "Source Code Pro", Courier, monospace;
 }
 
 .list-1 {
+  background-color: #d6ecfa;
   font-size: 2rem;
   margin-top: 3rem;
+  border-radius: 1rem;
+
+  grid-row: 1/6;
+  grid-column: 2/3;
+
+  width: 20vw;
+  height: 80vh;
+}
+.h3-programms {
+  font-size: 3.5vh;
+margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .ul1 > li {
-  margin-top: 4rem;
+  margin-top: 7vh;
+  justify-content: space-around;
+  flex-direction: row;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -29,25 +47,39 @@
   }
 
   100% {
-    text-decoration: underline;
-
-    scale: 1.3;
+    scale: 1.2;
   }
 }
 
 .list-2 {
-  font-size: large;
+  background-color: #d6ecfa;
   font-size: 2rem;
-  margin-top: 3rem;
+  margin-top: 4vh;
+  border-radius: 1rem;
+
+  grid-row: 1/6;
+  grid-column: 9/10;
+
+  width: 20vw;
+  height: 80vh;
+}
+
+.h3-frameLib {
+  font-size: 3.5vh;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+
 }
 .ul2 > li {
+  margin-top: 8vh;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
-  list-style: none;
   gap: 1rem;
-  border: 1px solid rgba(#fff, 0);
 }
 
 .ul2 > li:hover {
@@ -58,7 +90,43 @@
   }
 
   100% {
-    scale: 1.3;
-    text-decoration: underline;
+    scale: 1.2;
   }
+}
+
+.infoOfList {
+  grid-row: 1/7;
+  grid-column: 5 / span 3;
+}
+.bbb {
+  width: 22.5vw;
+  height: 60vh;
+  overflow-wrap: break-word;
+}
+
+.items {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+
+  background-color: #a5dff9;
+
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.items-clickATool {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+
+  height: 70vh;
+  width: 100%;
+
+  background-color: #9e9e9e;
+
+  padding: 2rem;
+
+  border-radius: 1rem;
 }

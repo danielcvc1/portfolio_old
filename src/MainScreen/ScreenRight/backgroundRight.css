@@ -1,0 +1,8 @@
+.backgroundRight {
+  background: linear-gradient(to right, #c214318e, #250b378e); 
+  height: 110vh;
+  width: 120vw;
+  z-index: 1;
+  position: fixed;
+  transform: translate(-85%,-50%);
+}

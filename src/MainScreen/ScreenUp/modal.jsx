@@ -10,15 +10,17 @@ const ModalUp = () => {
   const close = () => setScreen(false);
   const open = () => setScreen(true);
 
+
   return (
     <div className="up">
       <SlArrowUp
         style={{ position: "absolute" }}
         className="iconUp"
         onClick={() => (screen ? close() : open())}
+
       />
 
-      {screen && <ScreenUp screen={screen} handleClose={close} />}
+      {screen && <ScreenUp screen={screen} handleClose={close}/>}
       {screen && <Background/>}
 
     </div>
