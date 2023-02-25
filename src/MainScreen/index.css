@@ -25,17 +25,22 @@
   width: 100vw;
   background-image: url(../components/terminal.png);
   background-size: cover;
+position: absolute;
+  left: 0;
+  top: 0;
 
-  position: absolute;
+
+z-index: 10;
   animation: fadeOut 1s 11.5s forwards;
 }
 /* center text with animation */
 .centerText {
   grid-area: center;
   display: inline;
+
 }
 .centerText > h1 {
-  top: 3.5rem;
+  top: 6.5vh;
   left: 2rem;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -43,6 +48,7 @@
   color: rgb(255, 255, 255);
   position: relative;
   font-family: "Source Code Pro", monospace;
+
 }
 /* -----------------------animation-------------- */
 :root {
@@ -152,7 +158,7 @@ h1::after {
 /* green text  */
 /* ------------------1----------------- */
 .greenText-1 {
-  top: 3.5rem;
+  top: 6.5vh;
   left: 2rem;
   font-size: 2rem;
   margin-bottom: 1rem;

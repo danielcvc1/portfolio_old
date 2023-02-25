@@ -43,6 +43,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "json-loader": "^0.5.7"
   }
 }

@@ -1,0 +1,13 @@
+.pop{
+    height: 100rem;
+    width: 100rem;
+    background-color: rebeccapurple;
+}
+
+.back{
+height: 100vh;
+}
+.text{
+    height: 100rem;
+    width: 50rem;
+}

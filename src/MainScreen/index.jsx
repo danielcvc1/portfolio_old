@@ -8,7 +8,9 @@ const HomePage = () => {
   return (
     <div className="home-page">
      <div>
-{/* 
+
+
+{/* TERMINAL  */}
       <div className="terminal">
         <div className="centerText">
           <div className="greenText-1">
@@ -29,8 +31,9 @@ const HomePage = () => {
           <h1 className="five">site fully loaded</h1>
 
 
-        </div> */}
-      {/* </div> */}
+        </div> 
+       </div> 
+{/* TERMINAL */}
       </div>
       <div className="up">
         <ModalUp />
